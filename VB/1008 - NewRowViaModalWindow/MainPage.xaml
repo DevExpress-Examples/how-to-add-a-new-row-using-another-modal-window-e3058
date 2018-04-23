@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="_1008___NewRowViaModalWindow.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/core">
+
+    <StackPanel Margin="5">
+        <dxg:GridControl x:Name="grid" AutoPopulateColumns="True" Height="200">
+            <dxg:GridControl.View>
+                <dxg:TableView x:Name="view" AutoWidth="True" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+        <Button Name="addNewRowButton" Content="Add a new row..." Click="addNewRowButton_Click" Margin="5,10" Width="150" />
+
+        <dxc:DXWindow x:Name="newRowDialogWindow" 
+                      Title="New row dialog"    
+                      HorizontalContentAlignment="Stretch"
+                      IsSizable="False" AnimationType="Fade"
+                      Width="300">
+
+            <StackPanel x:Name="LayoutRoot" Margin="2">
+                <StackPanel Margin="2,2">
+                    <TextBlock Text="Text1: " />
+                    <TextBox Name="text1" />
+                </StackPanel>
+                <StackPanel Margin="2,2">
+                    <TextBlock Text="Text2: " />
+                    <TextBox Name="text2" />
+                </StackPanel>
+                <StackPanel Margin="2,2">
+                    <TextBlock Text="Text3: " />
+                    <TextBox Name="text3" />
+                </StackPanel>
+                <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal" Margin="2,2">
+                    <Button Click="OKButton_Click" Content="OK" Width="80" />
+                    <Button Click="CancelButton_Click" Content="Cancel" Width="80" />
+                </StackPanel>
+            </StackPanel>
+        </dxc:DXWindow>
+    </StackPanel>
+</UserControl>
