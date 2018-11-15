@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainPage.xaml](./CS/1008 - NewRowViaModalWindow/MainPage.xaml) (VB: [MainPage.xaml.vb](./VB/1008 - NewRowViaModalWindow/MainPage.xaml.vb))
+* [MainPage.xaml.cs](./CS/1008 - NewRowViaModalWindow/MainPage.xaml.cs) (VB: [MainPage.xaml.vb](./VB/1008 - NewRowViaModalWindow/MainPage.xaml.vb))
+<!-- default file list end -->
 # How to add a new row using another modal window
 
 
